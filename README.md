@@ -8,7 +8,7 @@ Live URL:
 
 - Cloudflare Pages: https://edgekit-demo-admin.pages.dev/
 
-This repo installs Edgekit v0.3.0 from vendored packed tarballs until the packages are published to npm. After publication, replace the `file:vendor/*.tgz` dependencies with normal semver ranges.
+This repo installs Edgekit from the published `@kevinmarmstrong/*` npm packages.
 
 ## Quickstart
 

@@ -1,6 +1,6 @@
 {
   "name": "edgekit-demo-admin",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "private": true,
   "type": "module",
   "scripts": {
@@ -11,15 +11,15 @@
     "deploy:cloudflare": "npm run build && npx wrangler pages deploy dist --project-name edgekit-demo-admin --branch main --commit-dirty=true"
   },
   "dependencies": {
-    "@kevinmarmstrong/edgekit": "file:vendor/kevinmarmstrong-edgekit-0.3.0.tgz",
-    "@kevinmarmstrong/edgekit-agui": "file:vendor/kevinmarmstrong-edgekit-agui-0.3.0.tgz",
-    "@kevinmarmstrong/edgekit-cli": "file:vendor/kevinmarmstrong-edgekit-cli-0.3.0.tgz",
-    "@kevinmarmstrong/edgekit-governance": "file:vendor/kevinmarmstrong-edgekit-governance-0.3.0.tgz",
-    "@kevinmarmstrong/edgekit-knowledge": "file:vendor/kevinmarmstrong-edgekit-knowledge-0.3.0.tgz",
-    "@kevinmarmstrong/edgekit-mcp": "file:vendor/kevinmarmstrong-edgekit-mcp-0.3.0.tgz",
-    "@kevinmarmstrong/edgekit-react": "file:vendor/kevinmarmstrong-edgekit-react-0.3.0.tgz",
-    "@kevinmarmstrong/edgekit-skills": "file:vendor/kevinmarmstrong-edgekit-skills-0.3.0.tgz",
-    "@kevinmarmstrong/edgekit-ui": "file:vendor/kevinmarmstrong-edgekit-ui-0.3.0.tgz",
+    "@kevinmarmstrong/edgekit": "^0.3.1",
+    "@kevinmarmstrong/edgekit-agui": "^0.3.1",
+    "@kevinmarmstrong/edgekit-cli": "^0.3.1",
+    "@kevinmarmstrong/edgekit-governance": "^0.3.1",
+    "@kevinmarmstrong/edgekit-knowledge": "^0.3.1",
+    "@kevinmarmstrong/edgekit-mcp": "^0.3.1",
+    "@kevinmarmstrong/edgekit-react": "^0.3.1",
+    "@kevinmarmstrong/edgekit-skills": "^0.3.1",
+    "@kevinmarmstrong/edgekit-ui": "^0.3.1",
     "typescript": "^5.9.3",
     "vite": "^8.0.14",
     "zod": "^4.4.3"
