@@ -1,0 +1,27 @@
+{
+  "name": "edgekit-demo-admin",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite --host 127.0.0.1 --port 5175",
+    "preview": "vite preview --host 127.0.0.1 --port 4175",
+    "typecheck": "tsc --noEmit",
+    "deploy:cloudflare": "npm run build && npx wrangler pages deploy dist --project-name edgekit-demo-admin --branch main --commit-dirty=true"
+  },
+  "dependencies": {
+    "@kevinmarmstrong/edgekit": "file:vendor/kevinmarmstrong-edgekit-0.3.0.tgz",
+    "@kevinmarmstrong/edgekit-agui": "file:vendor/kevinmarmstrong-edgekit-agui-0.3.0.tgz",
+    "@kevinmarmstrong/edgekit-cli": "file:vendor/kevinmarmstrong-edgekit-cli-0.3.0.tgz",
+    "@kevinmarmstrong/edgekit-governance": "file:vendor/kevinmarmstrong-edgekit-governance-0.3.0.tgz",
+    "@kevinmarmstrong/edgekit-knowledge": "file:vendor/kevinmarmstrong-edgekit-knowledge-0.3.0.tgz",
+    "@kevinmarmstrong/edgekit-mcp": "file:vendor/kevinmarmstrong-edgekit-mcp-0.3.0.tgz",
+    "@kevinmarmstrong/edgekit-react": "file:vendor/kevinmarmstrong-edgekit-react-0.3.0.tgz",
+    "@kevinmarmstrong/edgekit-skills": "file:vendor/kevinmarmstrong-edgekit-skills-0.3.0.tgz",
+    "@kevinmarmstrong/edgekit-ui": "file:vendor/kevinmarmstrong-edgekit-ui-0.3.0.tgz",
+    "typescript": "^5.9.3",
+    "vite": "^8.0.14",
+    "zod": "^4.4.3"
+  }
+}

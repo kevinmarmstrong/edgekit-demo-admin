@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #17201b;
+  background: #f7f5ef;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px clamp(20px, 4vw, 56px);
+  border-bottom: 1px solid #ded8ca;
+}
+
+a {
+  color: #0b5f4a;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(340px, 460px);
+  gap: clamp(24px, 5vw, 64px);
+  align-items: start;
+  padding: clamp(32px, 7vw, 96px) clamp(20px, 4vw, 56px);
+}
+
+.eyebrow {
+  color: #7a3e13;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+h1 {
+  max-width: 760px;
+  margin: 0;
+  font-size: clamp(2.4rem, 7vw, 5.4rem);
+  line-height: 0.98;
+  letter-spacing: 0;
+}
+
+h2 {
+  margin: 0 0 14px;
+  font-size: 1rem;
+}
+
+.hero p:not(.eyebrow) {
+  max-width: 680px;
+  font-size: 1.15rem;
+  line-height: 1.65;
+}
+
+edge-chat {
+  min-height: 540px;
+  border: 1px solid #d5cfc0;
+  background: #fffdf8;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr 1fr;
+  gap: 18px;
+  padding: 0 clamp(20px, 4vw, 56px) 56px;
+}
+
+.grid > div,
+.accounts article {
+  border: 1px solid #ded8ca;
+  background: #fffdf8;
+  padding: 18px;
+}
+
+.accounts {
+  display: grid;
+  gap: 12px;
+}
+
+.accounts span,
+#audit span {
+  display: block;
+  margin-top: 4px;
+  color: #6f746e;
+}
+
+pre {
+  overflow: auto;
+  margin: 0;
+  color: #183228;
+}
+
+@media (max-width: 880px) {
+  .hero,
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
